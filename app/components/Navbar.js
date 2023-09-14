@@ -9,7 +9,7 @@ const Navbar = () => {
           <h1 className='font-medium text-xl'>clamp</h1>
         </div>
         <div className='flex h-full'>
-          <div className='flex items-center justify-center p-3 px-5 border-r border-l border-r-gray-800 border-l-gray-800'>
+          <div className='flex items-center justify-center p-3 px-5 border-r border-l border-r-gray-800 border-l-gray-800 hover:bg-neutral-700 transition hover:cursor-pointer'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
@@ -25,7 +25,7 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <div className='flex items-center justify-between p-3 px-5 border-r border-r-gray-800'>
+          <div className='flex items-center justify-between p-3 px-5 border-r border-r-gray-800 hover:bg-neutral-700 transition hover:cursor-pointer'>
             <div className='flex items-center mr-12'>
               <div>
                 <svg
@@ -108,7 +108,7 @@ const Navbar = () => {
               </svg>
             </div>
           </div>
-          <div className='flex items-center justify-center p-3 px-5 border-r border-r-gray-800'>
+          <div className='flex items-center justify-center p-3 px-5 border-r border-r-gray-800 hover:bg-neutral-700 transition hover:cursor-pointer'>
             <div className='flex items-center mr-7'>
               <div className='rounded-lg p-2 py-1 bg-purple-500 text-sm font-medium'>
                 Polygon

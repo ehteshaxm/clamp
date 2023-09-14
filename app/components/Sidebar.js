@@ -11,7 +11,7 @@ import {
   HelpCircleOutline,
   AddOutline,
   CopyOutline,
-  LinkOutline,
+  OpenOutline,
 } from 'react-ionicons';
 
 const Sidebar = () => {
@@ -30,34 +30,34 @@ const Sidebar = () => {
               <CopyOutline color={'#fff'} width={'15px'} height={'15px'} />
             </div>
             <div className='bg-black text-white p-2 rounded-full'>
-              <LinkOutline color={'#fff'} width={'15px'} height={'15px'} />
+              <OpenOutline color={'#fff'} width={'15px'} height={'15px'} />
             </div>
           </div>
         </div>
       </div>
       <hr className='my-7' />
       <div>
-        <div className='flex items-center px-3 py-2 mb-1 rounded-xl bg-orange-300'>
+        <div className='flex items-center px-3 py-2 mb-1 rounded-xl bg-orange-400 hover:cursor-pointer transition'>
           <CompassOutline />
           <p className='font-semibold ml-4'>Explore</p>
         </div>
-        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100'>
+        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100 hover:cursor-pointer transition'>
           <CashOutline />
           <p className='font-semibold ml-4'>Assets</p>
         </div>
-        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100'>
+        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100 hover:cursor-pointer transition'>
           <CardOutline />
           <p className='font-semibold ml-4'>Transactions</p>
         </div>
-        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100'>
+        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100 hover:cursor-pointer transition'>
           <MedalOutline />
           <p className='font-semibold ml-4'>Rewards</p>
         </div>
-        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100'>
+        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100 hover:cursor-pointer transition'>
           <MegaphoneOutline />
           <p className='font-semibold ml-4'>Referral</p>
         </div>
-        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100'>
+        <div className='flex items-center px-3 py-2 mb-1 rounded-xl hover:bg-orange-100 hover:cursor-pointer transition'>
           <HourglassOutline />
           <p className='font-semibold ml-4'>Watchlist</p>
         </div>
