@@ -25,7 +25,7 @@ const IndexCard = ({ tokens, priceChange, up }) => {
       />
       <div className='p-5'>
         <div className='flex items-center justify-between'>
-          <h2 className='text-lg font-semibold'>{`${tokens[0]}-${tokens[1]}`}</h2>
+          <h3 className='text-lg font-semibold'>{`${tokens[0]}-${tokens[1]}`}</h3>
           <HeartOutline />
         </div>
         <div className='flex items-center justify-between mt-5'>
@@ -35,7 +35,13 @@ const IndexCard = ({ tokens, priceChange, up }) => {
                 colorMap[tokens[0]]
               } rounded-full`}
             >
-              <img src={`/tokens/${tokens[0]}.svg`} className='w-5 mr-1' />
+              <img
+                height={'20px'}
+                width={'20px'}
+                className='mr-1'
+                src={`/tokens/${tokens[0]}.svg`}
+                alt='token-logo'
+              />
               <p className='text-xs font-medium'>{tokens[0]}</p>
             </div>
             <div
@@ -43,7 +49,13 @@ const IndexCard = ({ tokens, priceChange, up }) => {
                 colorMap[tokens[1]]
               } rounded-full`}
             >
-              <img src={`/tokens/${tokens[1]}.svg`} className='w-5 mr-1' />
+              <img
+                height={'20px'}
+                width={'20px'}
+                className='mr-1'
+                src={`/tokens/${tokens[1]}.svg`}
+                alt='token-logo'
+              />
               <p className='text-xs font-medium'>{tokens[1]}</p>
             </div>
           </div>

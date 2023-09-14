@@ -4,10 +4,10 @@ import Actions from './Actions';
 
 const Panel = () => {
   return (
-    <div className='flex w-full'>
+    <section className='flex w-full'>
       <Overview />
       <Actions />
-    </div>
+    </section>
   );
 };
 

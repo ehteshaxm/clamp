@@ -6,17 +6,17 @@ import Index from './components/Index/Index';
 
 const Home = () => {
   return (
-    <div className='min-h-screen pb-20 bg-gray-200'>
+    <main className='min-h-screen pb-20 bg-gray-200'>
       <Navbar />
-      <div className='flex items-start mx-auto mt-16 max-w-7xl'>
+      <section className='flex items-start mx-auto mt-16 max-w-7xl'>
         <Sidebar />
         <div className='self-stretch w-1 mx-16 border-r border-gray-300'></div>
-        <div className='w-full'>
+        <section className='w-full'>
           <Panel />
           <Index />
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </main>
   );
 };
 

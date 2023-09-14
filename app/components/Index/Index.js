@@ -6,7 +6,7 @@ import { indexData } from '@/data';
 
 const Index = () => {
   return (
-    <div className='mt-10'>
+    <section className='mt-10'>
       <h2 className='text-xl font-semibold'>Indexes</h2>
       <div className='flex items-center justify-between w-full mt-3'>
         <form class='flex items-center w-2/3 bg-white rounded-lg p-3'>
@@ -30,7 +30,7 @@ const Index = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
