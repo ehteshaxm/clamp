@@ -2,7 +2,7 @@
 import React from 'react';
 import { Search } from 'react-ionicons';
 import IndexCard from './IndexCard';
-import { data } from '@/data';
+import { indexData } from '@/data';
 
 const Index = () => {
   return (
@@ -25,7 +25,7 @@ const Index = () => {
       </div>
       <div className='mt-10'>
         <div class='grid grid-cols-3 gap-4 auto-rows-min'>
-          {data.map((item) => (
+          {indexData.map((item) => (
             <IndexCard {...item} />
           ))}
         </div>
