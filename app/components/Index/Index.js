@@ -7,8 +7,8 @@ import { indexData } from '@/data';
 const Index = () => {
   return (
     <div className='mt-10'>
-      <h2 className='font-semibold text-xl'>Indexes</h2>
-      <div className='mt-3 w-full flex items-center justify-between'>
+      <h2 className='text-xl font-semibold'>Indexes</h2>
+      <div className='flex items-center justify-between w-full mt-3'>
         <form class='flex items-center w-2/3 bg-white rounded-lg p-3'>
           <div class='relative w-full'>
             <div class='absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>

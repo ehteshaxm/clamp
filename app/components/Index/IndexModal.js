@@ -48,6 +48,12 @@ const IndexModal = ({ onClose, isOpen, tokens, stampColorMap }) => {
     }
   }
 
+  function handleReset() {
+    setFirstTokenProportion(50);
+    setSecondTokenProportion(50);
+    setAmount(0);
+  }
+
   return (
     <Modal onClose={onClose} size={'md'} isOpen={isOpen} isCentered>
       <ModalOverlay bg='none' backdropFilter='auto' backdropBlur='10px' />
@@ -108,7 +114,7 @@ const IndexModal = ({ onClose, isOpen, tokens, stampColorMap }) => {
           </ResponsiveContainer>
           <hr className='my-10' />
           <div>
-            <div className='flex justify-between items-center'>
+            <div className='flex items-center justify-between'>
               <FormControl marginRight={5}>
                 <FormLabel fontSize={14} marginBottom={1}>
                   Enter Amount (in $)
@@ -145,15 +151,15 @@ const IndexModal = ({ onClose, isOpen, tokens, stampColorMap }) => {
               </FormControl>
             </div>
             <div className='mt-6'>
-              <div className='rounded-lg bg-gray-50 border p-5'>
-                <div className='flex justify-between items-center'>
-                  <div className='w-1/2 flex flex-col justify-start items-center'>
-                    <div className='flex items-center p-3 pb-1 pt-0 px-0 mr-1'>
+              <div className='p-5 border rounded-lg bg-gray-50'>
+                <div className='flex items-center justify-between'>
+                  <div className='flex flex-col items-center justify-start w-1/2'>
+                    <div className='flex items-center p-3 px-0 pt-0 pb-1 mr-1'>
                       <img
                         src={`/tokens/${tokens[0]}.svg`}
-                        className='w-7 mr-2'
+                        className='mr-2 w-7'
                       />
-                      <p className='text-md font-medium'>{tokens[0]}</p>
+                      <p className='font-medium text-md'>{tokens[0]}</p>
                     </div>
                     <Input
                       value={firstTokenProportion + '%'}
@@ -172,13 +178,13 @@ const IndexModal = ({ onClose, isOpen, tokens, stampColorMap }) => {
                     <p className='mt-2 font-mono text-sm'>1.02230</p>
                   </div>
                   <div className='w-5 border border-b border-gray-400'></div>
-                  <div className='w-1/2 flex flex-col justify-start items-center'>
-                    <div className='flex items-center p-3 pb-1 pt-0 px-0 mr-1'>
+                  <div className='flex flex-col items-center justify-start w-1/2'>
+                    <div className='flex items-center p-3 px-0 pt-0 pb-1 mr-1'>
                       <img
                         src={`/tokens/${tokens[1]}.svg`}
-                        className='w-7 mr-2'
+                        className='mr-2 w-7'
                       />
-                      <p className='text-md font-medium'>{tokens[1]}</p>
+                      <p className='font-medium text-md'>{tokens[1]}</p>
                     </div>
                     <Input
                       value={secondtokenProportion + '%'}
@@ -200,7 +206,7 @@ const IndexModal = ({ onClose, isOpen, tokens, stampColorMap }) => {
               </div>
             </div>
             <div className='mt-5'>
-              <div className='flex justify-between items-end'>
+              <div className='flex items-end justify-between'>
                 <div className='w-1/2'>
                   <FormControl marginRight={5}>
                     <FormLabel fontSize={14} marginBottom={1}>
@@ -214,11 +220,14 @@ const IndexModal = ({ onClose, isOpen, tokens, stampColorMap }) => {
                     </div>
                   </FormControl>
                 </div>
-                <div className='w-1/2 flex justify-center items-center'>
-                  <button className='border hover:bg-red-600 transition text-bl ack hover:text-white py-3 px-4 mr-2 text-sm rounded-full font-semibold'>
+                <div className='flex items-center justify-center w-1/2'>
+                  <button
+                    onClick={handleReset}
+                    className='px-4 py-3 mr-2 text-sm font-semibold transition border rounded-full hover:bg-red-600 text-bl ack hover:text-white'
+                  >
                     Reset
                   </button>
-                  <button className='bg-black hover:bg-neutral-700 transition text-white py-3 px-4 text-sm rounded-full font-semibold'>
+                  <button className='px-4 py-3 text-sm font-semibold text-white transition bg-black rounded-full hover:bg-neutral-700'>
                     Confirm
                   </button>
                 </div>

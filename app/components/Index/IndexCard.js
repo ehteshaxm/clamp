@@ -25,10 +25,10 @@ const IndexCard = ({ tokens, priceChange, up }) => {
       />
       <div className='p-5'>
         <div className='flex items-center justify-between'>
-          <h2 className='font-semibold text-lg'>{`${tokens[0]}-${tokens[1]}`}</h2>
+          <h2 className='text-lg font-semibold'>{`${tokens[0]}-${tokens[1]}`}</h2>
           <HeartOutline />
         </div>
-        <div className='mt-5 flex justify-between items-center'>
+        <div className='flex items-center justify-between mt-5'>
           <div className='flex flex-col items-start'>
             <div
               className={`flex items-center p-1 px-2 mb-1 ${
@@ -48,20 +48,20 @@ const IndexCard = ({ tokens, priceChange, up }) => {
             </div>
           </div>
           <div>
-            <p className='text-xs text-gray-500 mb-1 text-right'>
+            <p className='mb-1 text-xs text-right text-gray-500'>
               Price Change <br /> (in 24hrs)
             </p>
             <div className='flex items-start'>
               {up && <CaretUp color={'#84cc16'} />}
               {!up && <CaretDown color={'#ef4444'} />}
-              <p className='ml-1 font-bold text-xl'>{priceChange}</p>
+              <p className='ml-1 text-xl font-bold'>{priceChange}</p>
             </div>
           </div>
         </div>
       </div>
       <button
         onClick={onOpen}
-        className='bg-black w-full text-white p-3 text-sm hover:bg-neutral-700 transition'
+        className='w-full p-3 text-sm text-white transition bg-black hover:bg-neutral-700'
       >
         View Details
       </button>
